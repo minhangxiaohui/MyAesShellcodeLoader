@@ -1,0 +1,5 @@
+﻿  AES.cpp
+  AesShellcodeLoader.cpp
+C:\Users\ga0weI03\VisualStudioProject\MyAESLoader\MyAESLoader\AesShellcodeLoader.cpp(114,10): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+  正在生成代码...
+  MyAESLoader.vcxproj -> C:\Users\ga0weI03\VisualStudioProject\MyAESLoader\Debug\MyAESLoader.exe

